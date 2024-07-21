@@ -1,4 +1,26 @@
+
+
+body {
+    background-color: lightpink;
+}
+
 div {
     text-align: center;
     padding: 5%;
+}
+
+p {
+    color: dodgerblue;
+    font-size: 2.5em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    white-space: pre-line;
+}
+
+button {
+    background-color:blue;
+    color: hotpink;
+    border-radius: 12px;
+    width: 10em;
+    height: 4em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
