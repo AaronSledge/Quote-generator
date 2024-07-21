@@ -7,14 +7,32 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <script>window.twttr = (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+              t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+          
+            t._e = [];
+            t.ready = function(f) {
+              t._e.push(f);
+            };
+          
+            return t;
+          }(document, "script", "twitter-wjs"));</script>
+
         <div>
             <h1>Quote generator</h1>
             <p id="quote"></p>
-            <br>
-            <p id="author"></p>
         </div>
         <div>
             <button onclick="fetchQuote()">Press me for random quoute :></button>
+            <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world" 
+            data-size="large"
+            data-text="Get a random quote here.">Tweet</a>
         </div>
         <script src="script.js"></script>
     </body>
